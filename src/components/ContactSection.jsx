@@ -5,8 +5,8 @@ import { pageTransition, staggerContainer, fadeInUp, cardItem } from '../utils/a
 const CONTACT_LINKS = [
   { label:'Email', value:'jhonsonayalew21@gmail.com', icon:'✉', href:'mailto:jhonsonayalew21@gmail.com' },
   { label:'GitHub', value:'github.com/JhonsonAyalew', icon:'⬡', href:'https://github.com/JhonsonAyalew' },
-  { label:'LinkedIn', value:'in/jhonson-ayalew-a3738138b', icon:'◆', href:'https://linkedin.com/in/jhonson-ayalew-a3738138b' },
-  { label:'Portfolio', value:'portfolio-chi-seven-11.vercel.app', icon:'▷', href:'https://portfolio-chi-seven-11.vercel.app' },
+  { label:'LinkedIn', value:'in/jhonson-ayalew-a3738138b', icon:'◆', href:'https://linkedin.com/in/jhonson-ayalew-a3738138b' }
+  
 ];
 
 export default function ContactSection() {
