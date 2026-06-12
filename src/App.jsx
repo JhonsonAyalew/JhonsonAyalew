@@ -1,7 +1,6 @@
 import { useState, useCallback } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import CustomCursor from './components/CustomCursor.jsx';
-import ParticleBackground from './components/ParticleBackground.jsx';
 import NavBar from './components/NavBar.jsx';
 import AIChatInterface from './components/AIChatInterface.jsx';
 import HeroSection from './components/HeroSection.jsx';
@@ -18,7 +17,7 @@ import { useGroqAI } from './hooks/useGroqAI.js';
 import { usePortfolioState } from './hooks/usePortfolioState.js';
 import { PROJECTS, SKILLS } from './data/knowledgeBase.js';
 
-const CHAT_BOTTOM_OFFSET = 160; // px reserved for chat bar
+const CHAT_BOTTOM_OFFSET = 62;
 
 export default function App() {
   const { mode, payload, navigate, goBack } = usePortfolioState();
@@ -42,7 +41,6 @@ export default function App() {
 
     const intent = parseIntent(userMessage);
 
-    // Determine context hint based on mode
     let contextHint = '';
     if (intent.mode === 'PROJECT_DETAIL' && intent.payload.projectId) {
       const p = PROJECTS.find(pr => pr.id === intent.payload.projectId);
@@ -61,7 +59,6 @@ export default function App() {
       addMessage('assistant', reply, true);
       setDetailContent(reply);
 
-      // Navigate after getting response
       if (intent.mode) {
         navigate(intent.mode, intent.payload);
       }
@@ -75,9 +72,7 @@ export default function App() {
     setDetailContent(null);
   };
 
-  const handleSuggest = (text) => {
-    handleSendMessage(text);
-  };
+  const handleSuggest = (text) => { handleSendMessage(text); };
 
   const handleSelectProject = (project) => {
     navigate('PROJECT_DETAIL', { projectId: project.id });
@@ -94,29 +89,21 @@ export default function App() {
   return (
     <div style={{ minHeight: '100vh', position: 'relative', overflow: 'hidden' }}>
       <CustomCursor />
-      <ParticleBackground />
 
-      {/* Ambient bottom glow */}
-      <div style={{
-        position: 'fixed',
-        bottom: '-200px',
-        left: '50%',
-        transform: 'translateX(-50%)',
-        width: '700px',
-        height: '500px',
-        background: 'radial-gradient(ellipse, rgba(0, 180, 255, 0.06), transparent 70%)',
-        pointerEvents: 'none',
-        zIndex: 0,
-      }} />
+      {/* Ambient orb background */}
+      <div className="ambient-bg">
+        <div className="orb orb-1" />
+        <div className="orb orb-2" />
+        <div className="orb orb-3" />
+      </div>
 
       <NavBar currentMode={mode} onNavigate={handleNavNavigate} />
 
       {/* Main content area */}
       <div style={{
         position: 'fixed',
-        top: '65px',
-        left: 0,
-        right: 0,
+        top: '60px',
+        left: 0, right: 0,
         bottom: `${CHAT_BOTTOM_OFFSET}px`,
         zIndex: 10,
         overflowY: 'auto',
@@ -125,9 +112,7 @@ export default function App() {
         justifyContent: 'center',
       }}>
         <AnimatePresence mode="wait">
-          {mode === 'HERO' && (
-            <HeroSection key="hero" onSuggest={handleSuggest} />
-          )}
+          {mode === 'HERO' && <HeroSection key="hero" onSuggest={handleSuggest} />}
           {mode === 'HERO_DETAIL' && (
             <HeroDetailView
               key={`hero-detail-${payload.detailType}`}
@@ -136,9 +121,7 @@ export default function App() {
               onBack={() => navigate('HERO', {})}
             />
           )}
-          {mode === 'ABOUT' && (
-            <AboutSection key="about" aiContent={detailContent} />
-          )}
+          {mode === 'ABOUT' && <AboutSection key="about" aiContent={detailContent} />}
           {mode === 'ABOUT_DETAIL' && (
             <AboutDetailView
               key={`about-detail-${payload.detailType}`}
@@ -147,9 +130,7 @@ export default function App() {
               onBack={() => navigate('ABOUT', {})}
             />
           )}
-          {mode === 'PROJECTS_GRID' && (
-            <ProjectsGrid key="projects" onSelectProject={handleSelectProject} />
-          )}
+          {mode === 'PROJECTS_GRID' && <ProjectsGrid key="projects" onSelectProject={handleSelectProject} />}
           {mode === 'PROJECT_DETAIL' && (
             <ProjectDetailView
               key={`project-${payload.projectId}`}
@@ -158,9 +139,7 @@ export default function App() {
               onBack={() => navigate('PROJECTS_GRID', {})}
             />
           )}
-          {mode === 'SKILLS_GRID' && (
-            <SkillsGrid key="skills" onSelectSkill={handleSelectSkill} />
-          )}
+          {mode === 'SKILLS_GRID' && <SkillsGrid key="skills" onSelectSkill={handleSelectSkill} />}
           {mode === 'SKILL_DETAIL' && (
             <SkillDetailView
               key={`skill-${payload.skillId}`}
@@ -169,9 +148,7 @@ export default function App() {
               onBack={() => navigate('SKILLS_GRID', {})}
             />
           )}
-          {mode === 'CONTACT' && (
-            <ContactSection key="contact" />
-          )}
+          {mode === 'CONTACT' && <ContactSection key="contact" />}
         </AnimatePresence>
       </div>
 
