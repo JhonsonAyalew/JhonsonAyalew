@@ -64,8 +64,7 @@ I build **AI-powered automation systems** that eliminate hours of manual work â€
 
 <div align="center">
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=JhonsonAyalew&show_icons=true&hide_border=true&count_private=true&hide_title=true&theme=default)
-&nbsp;&nbsp;
+
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=JhonsonAyalew&layout=compact&hide_border=true&theme=default)
 
 </div>
