@@ -4,7 +4,7 @@
 
 **Python Developer · AI Automation · Data Engineering**
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/YOUR-USERNAME)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/johnson-ayalew)
 [![Email](https://img.shields.io/badge/Email-Contact-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:YOUR-EMAIL)
 ![Open to Work](https://img.shields.io/badge/Open%20to%20Work-1D9E75?style=flat-square)
 
