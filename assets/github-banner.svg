@@ -1,94 +1,184 @@
 <svg width="1600" height="420" viewBox="0 0 1600 420" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Deep Dark Background Gradient -->
+    <radialGradient id="bgDark" cx="50%" cy="40%" r="70%">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="60%" stop-color="#020617"/>
+      <stop offset="100%" stop-color="#000000"/>
+    </radialGradient>
 
-<defs>
+    <!-- Premium Accent Gradients -->
+    <linearGradient id="accentPrimary" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3B82F6"/>
+      <stop offset="50%" stop-color="#8B5CF6"/>
+      <stop offset="100%" stop-color="#06B6D4"/>
+    </linearGradient>
 
-<linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-<stop offset="0%" stop-color="#0F172A"/>
-<stop offset="100%" stop-color="#020617"/>
-</linearGradient>
+    <linearGradient id="accentGold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#F59E0B"/>
+      <stop offset="100%" stop-color="#FCD34D"/>
+    </linearGradient>
 
-<linearGradient id="line" x1="0%" y1="0%" x2="100%" y2="0%">
-<stop offset="0%" stop-color="#3B82F6"/>
-<stop offset="100%" stop-color="#06B6D4"/>
-</linearGradient>
+    <linearGradient id="accentBlue" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#3B82F6"/>
+      <stop offset="100%" stop-color="#1D4ED8"/>
+    </linearGradient>
 
-</defs>
+    <!-- Glow Filter for Highlights -->
+    <filter id="glowPrimary" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
 
-<rect width="1600" height="420" fill="url(#bg)"/>
+    <!-- Subtle Shadow for Depth -->
+    <filter id="shadowDeep" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000000" flood-opacity="0.8"/>
+    </filter>
+  </defs>
 
-<circle cx="1350" cy="90" r="180" fill="#2563EB" opacity="0.08"/>
-<circle cx="1480" cy="320" r="120" fill="#06B6D4" opacity="0.08"/>
+  <!-- Background -->
+  <rect width="1600" height="420" fill="url(#bgDark)"/>
 
-<line x1="120" y1="120" x2="420" y2="120"
-stroke="url(#line)"
-stroke-width="5"/>
+  <!-- Abstract Geometric Background Elements -->
+  <rect x="1400" y="-50" width="300" height="300" fill="#3B82F6" opacity="0.03" transform="rotate(45, 1400, 100)"/>
+  <rect x="1480" y="300" width="200" height="200" fill="#8B5CF6" opacity="0.03" transform="rotate(30, 1480, 400)"/>
+  <rect x="0" y="350" width="400" height="100" fill="#06B6D4" opacity="0.02"/>
+  
+  <!-- Top Status Bar -->
+  <rect x="0" y="0" width="1600" height="4" fill="url(#accentPrimary)"/>
 
-<text
-x="120"
-y="180"
-font-size="64"
-font-family="Segoe UI, Arial, sans-serif"
-fill="white"
-font-weight="700">
-Johnson Ayalew
-</text>
+  <!-- Decorative Left Border Accent -->
+  <rect x="0" y="80" width="6" height="260" fill="url(#accentPrimary)" opacity="0.7"/>
 
-<text
-x="120"
-y="235"
-font-size="28"
-font-family="Segoe UI, Arial, sans-serif"
-fill="#94A3B8">
-AI Automation Engineer • Python Developer • Data Engineering
-</text>
+  <!-- Availability Badge - Top Right -->
+  <rect x="1420" y="24" width="160" height="32" fill="#0F172A" stroke="#1E293B" stroke-width="1"/>
+  <rect x="1420" y="24" width="160" height="32" fill="#22C55E" opacity="0.08"/>
+  <circle cx="1445" cy="40" r="4" fill="#22C55E">
+    <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <text x="1455" y="45" font-size="13" font-family="Segoe UI, Arial, sans-serif" fill="#86EFAC" font-weight="600" letter-spacing="0.5">
+    AVAILABLE FOR WORK
+  </text>
 
-<text
-x="120"
-y="285"
-font-size="22"
-font-family="Segoe UI, Arial, sans-serif"
-fill="#64748B">
-Building intelligent automation • LLM workflows • Web Scraping • ETL Pipelines
-</text>
+  <!-- Main Content -->
+  
+  <!-- Name -->
+  <text x="80" y="145" font-size="72" font-family="Segoe UI, Arial, sans-serif" fill="#FFFFFF" font-weight="300" letter-spacing="-1">
+    Johnson Ayalew
+  </text>
 
-<rect
-x="120"
-y="320"
-rx="18"
-ry="18"
-width="170"
-height="42"
-fill="#2563EB"/>
+  <!-- Underline Accent -->
+  <rect x="80" y="165" width="80" height="3" fill="url(#accentGold)" filter="url(#glowPrimary)"/>
 
-<text
-x="205"
-y="347"
-text-anchor="middle"
-font-size="18"
-font-family="Segoe UI, Arial, sans-serif"
-fill="white"
-font-weight="600">
-Open to Work
-</text>
+  <!-- Professional Title -->
+  <text x="80" y="215" font-size="32" font-family="Segoe UI, Arial, sans-serif" fill="#E2E8F0" font-weight="300" letter-spacing="1">
+    AI Automation Engineer
+  </text>
 
-<rect
-x="315"
-y="320"
-rx="18"
-ry="18"
-width="190"
-height="42"
-fill="#0F172A"
-stroke="#334155"/>
+  <!-- Divider Dot -->
+  <circle cx="80" cy="242" r="3" fill="#3B82F6"/>
+  <circle cx="96" cy="242" r="3" fill="#8B5CF6"/>
+  <circle cx="112" cy="242" r="3" fill="#06B6D4"/>
 
-<text
-x="410"
-y="347"
-text-anchor="middle"
-font-size="18"
-font-family="Segoe UI, Arial, sans-serif"
-fill="#CBD5E1">
-Remote • Europe
-</text>
+  <!-- Specialization Tags -->
+  <text x="140" y="248" font-size="18" font-family="Segoe UI, Arial, sans-serif" fill="#94A3B8" font-weight="400">
+    Python Development
+  </text>
+  <rect x="290" y="234" width="1" height="18" fill="#334155"/>
+  <text x="310" y="248" font-size="18" font-family="Segoe UI, Arial, sans-serif" fill="#94A3B8" font-weight="400">
+    LLM Workflows
+  </text>
+  <rect x="460" y="234" width="1" height="18" fill="#334155"/>
+  <text x="480" y="248" font-size="18" font-family="Segoe UI, Arial, sans-serif" fill="#94A3B8" font-weight="400">
+    ETL Pipelines
+  </text>
+
+  <!-- Description -->
+  <text x="80" y="295" font-size="16" font-family="Segoe UI, Arial, sans-serif" fill="#64748B" font-weight="400" letter-spacing="0.3">
+    Building intelligent automation solutions • Web Scraping • Data Engineering
+  </text>
+
+  <!-- Action Buttons -->
+  
+  <!-- Primary CTA -->
+  <g filter="url(#shadowDeep)">
+    <rect x="80" y="330" width="180" height="46" fill="url(#accentBlue)"/>
+    <rect x="80" y="330" width="180" height="46" fill="url(#accentPrimary)" opacity="0.3"/>
+    <text x="170" y="358" text-anchor="middle" font-size="16" font-family="Segoe UI, Arial, sans-serif" fill="#FFFFFF" font-weight="700" letter-spacing="0.5">
+      OPEN TO WORK
+    </text>
+  </g>
+
+  <!-- Secondary CTA -->
+  <g filter="url(#shadowDeep)">
+    <rect x="280" y="330" width="200" height="46" fill="#0F172A" stroke="#1E293B" stroke-width="1"/>
+    <text x="380" y="358" text-anchor="middle" font-size="15" font-family="Segoe UI, Arial, sans-serif" fill="#CBD5E1" font-weight="500">
+      🌍 Remote • Europe
+    </text>
+  </g>
+
+  <!-- Tertiary CTA -->
+  <g filter="url(#shadowDeep)">
+    <rect x="500" y="330" width="120" height="46" fill="transparent" stroke="#334155" stroke-width="1"/>
+    <text x="560" y="358" text-anchor="middle" font-size="15" font-family="Segoe UI, Arial, sans-serif" fill="#94A3B8" font-weight="500">
+      Contact
+    </text>
+  </g>
+
+  <!-- Right Side Stats Panel -->
+  
+  <!-- Panel Background -->
+  <rect x="1260" y="60" width="280" height="300" fill="#0A0F1A" stroke="#1E293B" stroke-width="1"/>
+  
+  <!-- Panel Header Line -->
+  <rect x="1260" y="60" width="280" height="3" fill="url(#accentPrimary)"/>
+
+  <!-- Stat 1: Experience -->
+  <text x="1290" y="110" font-size="12" font-family="Segoe UI, Arial, sans-serif" fill="#475569" font-weight="600" letter-spacing="1">
+    EXPERIENCE
+  </text>
+  <text x="1290" y="150" font-size="32" font-family="Segoe UI, Arial, sans-serif" fill="#FFFFFF" font-weight="300">
+    5+ Years
+  </text>
+  <text x="1290" y="172" font-size="13" font-family="Segoe UI, Arial, sans-serif" fill="#64748B">
+    Industry Expertise
+  </text>
+
+  <!-- Divider -->
+  <rect x="1260" y="195" width="280" height="1" fill="#1E293B"/>
+
+  <!-- Stat 2: Projects -->
+  <text x="1290" y="225" font-size="12" font-family="Segoe UI, Arial, sans-serif" fill="#475569" font-weight="600" letter-spacing="1">
+    PROJECTS
+  </text>
+  <text x="1290" y="265" font-size="32" font-family="Segoe UI, Arial, sans-serif" fill="#FFFFFF" font-weight="300">
+    12+
+  </text>
+  <text x="1290" y="287" font-size="13" font-family="Segoe UI, Arial, sans-serif" fill="#64748B">
+    Successful Deliveries
+  </text>
+
+  <!-- Divider -->
+  <rect x="1260" y="310" width="280" height="1" fill="#1E293B"/>
+
+  <!-- Stat 3: Client Satisfaction -->
+  <text x="1290" y="335" font-size="12" font-family="Segoe UI, Arial, sans-serif" fill="#475569" font-weight="600" letter-spacing="1">
+    SATISFACTION
+  </text>
+  <text x="1290" y="348" font-size="16" font-family="Segoe UI, Arial, sans-serif" fill="#FCD34D" font-weight="600">
+    ⭐ 4.9 / 5.0
+  </text>
+
+  <!-- Bottom Accent Line -->
+  <rect x="1260" y="357" width="280" height="3" fill="url(#accentGold)" opacity="0.5"/>
+
+  <!-- Decorative Corner Accents -->
+  <rect x="1260" y="60" width="20" height="3" fill="#3B82F6" opacity="0.5"/>
+  <rect x="1520" y="60" width="20" height="3" fill="#3B82F6" opacity="0.5"/>
+  <rect x="1260" y="357" width="20" height="3" fill="#3B82F6" opacity="0.5"/>
+  <rect x="1520" y="357" width="20" height="3" fill="#3B82F6" opacity="0.5"/>
 
 </svg>
