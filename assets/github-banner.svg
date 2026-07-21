@@ -1,0 +1,94 @@
+<svg width="1600" height="420" viewBox="0 0 1600 420" xmlns="http://www.w3.org/2000/svg">
+
+<defs>
+
+<linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+<stop offset="0%" stop-color="#0F172A"/>
+<stop offset="100%" stop-color="#020617"/>
+</linearGradient>
+
+<linearGradient id="line" x1="0%" y1="0%" x2="100%" y2="0%">
+<stop offset="0%" stop-color="#3B82F6"/>
+<stop offset="100%" stop-color="#06B6D4"/>
+</linearGradient>
+
+</defs>
+
+<rect width="1600" height="420" fill="url(#bg)"/>
+
+<circle cx="1350" cy="90" r="180" fill="#2563EB" opacity="0.08"/>
+<circle cx="1480" cy="320" r="120" fill="#06B6D4" opacity="0.08"/>
+
+<line x1="120" y1="120" x2="420" y2="120"
+stroke="url(#line)"
+stroke-width="5"/>
+
+<text
+x="120"
+y="180"
+font-size="64"
+font-family="Segoe UI, Arial, sans-serif"
+fill="white"
+font-weight="700">
+Johnson Ayalew
+</text>
+
+<text
+x="120"
+y="235"
+font-size="28"
+font-family="Segoe UI, Arial, sans-serif"
+fill="#94A3B8">
+AI Automation Engineer • Python Developer • Data Engineering
+</text>
+
+<text
+x="120"
+y="285"
+font-size="22"
+font-family="Segoe UI, Arial, sans-serif"
+fill="#64748B">
+Building intelligent automation • LLM workflows • Web Scraping • ETL Pipelines
+</text>
+
+<rect
+x="120"
+y="320"
+rx="18"
+ry="18"
+width="170"
+height="42"
+fill="#2563EB"/>
+
+<text
+x="205"
+y="347"
+text-anchor="middle"
+font-size="18"
+font-family="Segoe UI, Arial, sans-serif"
+fill="white"
+font-weight="600">
+Open to Work
+</text>
+
+<rect
+x="315"
+y="320"
+rx="18"
+ry="18"
+width="190"
+height="42"
+fill="#0F172A"
+stroke="#334155"/>
+
+<text
+x="410"
+y="347"
+text-anchor="middle"
+font-size="18"
+font-family="Segoe UI, Arial, sans-serif"
+fill="#CBD5E1">
+Remote • Europe
+</text>
+
+</svg>
