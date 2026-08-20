@@ -1,0 +1,60 @@
+<svg viewBox="0 0 1200 620" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Diagram showing Johnson Aylew at the center as orchestrator, connected by thin lines to five projects: automation-tools, ai-data-labeling, python-projects, backend-node-react, and frontend-react">
+  <rect width="1200" height="620" fill="#121212"/>
+
+  <!-- connecting lines -->
+  <g stroke="#FFFFFF" stroke-opacity="0.16" stroke-width="1">
+    <line x1="600" y1="310" x2="600" y2="120"/>
+    <line x1="600" y1="310" x2="920" y2="230"/>
+    <line x1="600" y1="310" x2="880" y2="500"/>
+    <line x1="600" y1="310" x2="320" y2="500"/>
+    <line x1="600" y1="310" x2="280" y2="230"/>
+  </g>
+
+  <!-- center: orchestrator -->
+  <circle cx="600" cy="310" r="46" fill="#1A1A1A" stroke="#C94B4B" stroke-width="1.4"/>
+  <circle cx="600" cy="310" r="2.4" fill="#C94B4B"/>
+  <g font-family="Arial, Helvetica, sans-serif" text-anchor="middle">
+    <text x="600" y="303" fill="#F4F4F2" font-size="12" font-weight="700" letter-spacing="1.5">JOHNSON</text>
+    <text x="600" y="320" fill="#A6A6A0" font-size="9" letter-spacing="2">ORCHESTRATOR</text>
+  </g>
+
+  <!-- node: automation-tools (top, largest — most active project) -->
+  <circle cx="600" cy="120" r="15" fill="#202020" stroke="#F4F4F2" stroke-opacity="0.5" stroke-width="1"/>
+  <g font-family="Arial, Helvetica, sans-serif" text-anchor="middle">
+    <text x="600" y="72" fill="#F4F4F2" font-size="16" font-weight="700" letter-spacing="0.5">AUTOMATION-TOOLS</text>
+    <text x="600" y="92" fill="#A6A6A0" font-size="11">Scraping, price tracking, CSV utilities, Telegram alerts</text>
+    <text x="600" y="107" fill="#A6A6A0" font-size="9" letter-spacing="1.5" opacity="0.8">PYTHON · TELEGRAM API</text>
+  </g>
+
+  <!-- node: ai-data-labeling (upper right) -->
+  <circle cx="920" cy="230" r="13" fill="#202020" stroke="#F4F4F2" stroke-opacity="0.5" stroke-width="1"/>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <text x="945" y="205" fill="#F4F4F2" font-size="15" font-weight="700" letter-spacing="0.5">AI-DATA-LABELING</text>
+    <text x="945" y="225" fill="#A6A6A0" font-size="11">Image, video &amp; NLP annotation samples</text>
+    <text x="945" y="242" fill="#A6A6A0" font-size="9" letter-spacing="1.5" opacity="0.8">LABEL STUDIO · CVAT</text>
+  </g>
+
+  <!-- node: python-projects (lower right) -->
+  <circle cx="880" cy="500" r="12" fill="#202020" stroke="#F4F4F2" stroke-opacity="0.5" stroke-width="1"/>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <text x="905" y="480" fill="#F4F4F2" font-size="15" font-weight="700" letter-spacing="0.5">PYTHON-PROJECTS</text>
+    <text x="905" y="500" fill="#A6A6A0" font-size="11">Detection, automation &amp; campus systems</text>
+    <text x="905" y="517" fill="#A6A6A0" font-size="9" letter-spacing="1.5" opacity="0.8">PYTHON</text>
+  </g>
+
+  <!-- node: frontend-react (lower left) -->
+  <circle cx="320" cy="500" r="11" fill="#202020" stroke="#F4F4F2" stroke-opacity="0.5" stroke-width="1"/>
+  <g font-family="Arial, Helvetica, sans-serif" text-anchor="end">
+    <text x="295" y="480" fill="#F4F4F2" font-size="15" font-weight="700" letter-spacing="0.5">FRONTEND-REACT</text>
+    <text x="295" y="500" fill="#A6A6A0" font-size="11">Client interface layer</text>
+    <text x="295" y="517" fill="#A6A6A0" font-size="9" letter-spacing="1.5" opacity="0.8">REACT · JAVASCRIPT</text>
+  </g>
+
+  <!-- node: backend-node-react (upper left) -->
+  <circle cx="280" cy="230" r="11" fill="#202020" stroke="#F4F4F2" stroke-opacity="0.5" stroke-width="1"/>
+  <g font-family="Arial, Helvetica, sans-serif" text-anchor="end">
+    <text x="255" y="205" fill="#F4F4F2" font-size="15" font-weight="700" letter-spacing="0.5">BACKEND-NODE-REACT</text>
+    <text x="255" y="225" fill="#A6A6A0" font-size="11">API &amp; server layer</text>
+    <text x="255" y="242" fill="#A6A6A0" font-size="9" letter-spacing="1.5" opacity="0.8">NODE.JS</text>
+  </g>
+</svg>
