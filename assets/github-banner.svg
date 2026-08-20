@@ -1,29 +1,28 @@
 <svg width="1600" height="420" viewBox="0 0 1600 420" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0B0F17"/>
-      <stop offset="55%" stop-color="#070A10"/>
-      <stop offset="100%" stop-color="#04060A"/>
+      <stop offset="0%" stop-color="#0D1117"/>
+      <stop offset="55%" stop-color="#0A0D12"/>
+      <stop offset="100%" stop-color="#060809"/>
     </linearGradient>
 
-    <linearGradient id="teal" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#2DD4BF"/>
-      <stop offset="100%" stop-color="#14B8A6"/>
+    <linearGradient id="orange" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#F0883E"/>
+      <stop offset="100%" stop-color="#DB6D28"/>
     </linearGradient>
 
-    <linearGradient id="amber" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#FBBF24"/>
-      <stop offset="100%" stop-color="#F59E0B"/>
+    <linearGradient id="orangeSoft" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFA657"/>
+      <stop offset="100%" stop-color="#F0883E"/>
     </linearGradient>
 
     <linearGradient id="pipeline" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#2DD4BF"/>
-      <stop offset="70%" stop-color="#2DD4BF"/>
-      <stop offset="100%" stop-color="#F59E0B"/>
+      <stop offset="0%" stop-color="#F0883E"/>
+      <stop offset="100%" stop-color="#DB6D28"/>
     </linearGradient>
 
     <pattern id="dots" width="26" height="26" patternUnits="userSpaceOnUse">
-      <circle cx="2" cy="2" r="1" fill="#2DD4BF" opacity="0.06"/>
+      <circle cx="2" cy="2" r="1" fill="#F0883E" opacity="0.07"/>
     </pattern>
 
     <filter id="panelShadow" x="-10%" y="-10%" width="120%" height="120%">
@@ -36,57 +35,57 @@
   <rect width="1600" height="420" fill="url(#dots)"/>
 
   <!-- top hairline -->
-  <rect x="0" y="0" width="1600" height="3" fill="url(#teal)"/>
+  <rect x="0" y="0" width="1600" height="3" fill="url(#orange)"/>
 
   <!-- availability badge -->
-  <rect x="1378" y="12" width="182" height="30" rx="15" fill="#0D1420" stroke="#1E3A34" stroke-width="1"/>
-  <circle cx="1400" cy="27" r="4" fill="#34D399">
+  <rect x="1378" y="12" width="182" height="30" rx="15" fill="#161B22" stroke="#30363D" stroke-width="1"/>
+  <circle cx="1400" cy="27" r="4" fill="#3FB950">
     <animate attributeName="opacity" values="1;0.25;1" dur="2.2s" repeatCount="indefinite"/>
   </circle>
-  <text x="1412" y="32" font-size="12" font-family="Consolas, 'SF Mono', Menlo, monospace" fill="#86EFAC" font-weight="600" letter-spacing="0.5">AVAILABLE FOR WORK</text>
+  <text x="1412" y="32" font-size="12" font-family="Consolas, 'SF Mono', Menlo, monospace" fill="#7EE787" font-weight="600" letter-spacing="0.5">AVAILABLE FOR WORK</text>
 
   <!-- ============ LEFT: TERMINAL PANEL ============ -->
   <g filter="url(#panelShadow)">
-    <rect x="48" y="48" width="860" height="340" rx="10" fill="#0B111C" stroke="#1C2433" stroke-width="1.5"/>
+    <rect x="48" y="48" width="860" height="340" rx="10" fill="#0D1117" stroke="#30363D" stroke-width="1.5"/>
     <!-- title bar -->
-    <rect x="48" y="48" width="860" height="34" rx="10" fill="#0A0F1A"/>
-    <rect x="48" y="70" width="860" height="12" fill="#0A0F1A"/>
-    <circle cx="72" cy="65" r="6" fill="#FF5F56"/>
-    <circle cx="92" cy="65" r="6" fill="#FFBD2E"/>
-    <circle cx="112" cy="65" r="6" fill="#27C93F"/>
-    <text x="478" y="69" text-anchor="middle" font-size="12" font-family="Consolas, 'SF Mono', Menlo, monospace" fill="#475569">johnson_ayalew — zsh</text>
+    <rect x="48" y="48" width="860" height="34" rx="10" fill="#161B22"/>
+    <rect x="48" y="70" width="860" height="12" fill="#161B22"/>
+    <circle cx="72" cy="65" r="6" fill="#FF7B72"/>
+    <circle cx="92" cy="65" r="6" fill="#F0883E"/>
+    <circle cx="112" cy="65" r="6" fill="#3FB950"/>
+    <text x="478" y="69" text-anchor="middle" font-size="12" font-family="Consolas, 'SF Mono', Menlo, monospace" fill="#8B949E">johnson_ayalew — zsh</text>
   </g>
 
   <!-- terminal body -->
-  <text x="80" y="120" font-size="15" font-family="Consolas, 'SF Mono', Menlo, monospace"><tspan fill="#2DD4BF">guest@dev</tspan><tspan fill="#475569">:~$ </tspan><tspan fill="#94A3B8">whoami</tspan></text>
-  <text x="80" y="165" font-size="40" font-family="Consolas, 'SF Mono', Menlo, monospace" fill="#F1F5F9" font-weight="700">Johnson Ayalew</text>
-  <rect x="432" y="140" width="14" height="30" fill="#2DD4BF">
+  <text x="80" y="120" font-size="15" font-family="Consolas, 'SF Mono', Menlo, monospace"><tspan fill="#F0883E">guest@dev</tspan><tspan fill="#8B949E">:~$ </tspan><tspan fill="#C9D1D9">whoami</tspan></text>
+  <text x="80" y="165" font-size="40" font-family="Consolas, 'SF Mono', Menlo, monospace" fill="#E6EDF3" font-weight="700">Johnson Ayalew</text>
+  <rect x="432" y="140" width="14" height="30" fill="#F0883E">
     <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.5;0.5;1" dur="1.1s" repeatCount="indefinite"/>
   </rect>
 
-  <text x="80" y="200" font-size="15" font-family="Consolas, 'SF Mono', Menlo, monospace"><tspan fill="#2DD4BF">guest@dev</tspan><tspan fill="#475569">:~$ </tspan><tspan fill="#94A3B8">cat role.txt</tspan></text>
-  <text x="80" y="228" font-size="22" font-family="Consolas, 'SF Mono', Menlo, monospace" fill="#FBBF24" font-weight="700">AI Automation Engineer</text>
+  <text x="80" y="200" font-size="15" font-family="Consolas, 'SF Mono', Menlo, monospace"><tspan fill="#F0883E">guest@dev</tspan><tspan fill="#8B949E">:~$ </tspan><tspan fill="#C9D1D9">cat role.txt</tspan></text>
+  <text x="80" y="228" font-size="22" font-family="Consolas, 'SF Mono', Menlo, monospace" fill="#FFA657" font-weight="700">AI Automation Engineer</text>
 
-  <text x="80" y="264" font-size="15" font-family="Consolas, 'SF Mono', Menlo, monospace"><tspan fill="#2DD4BF">guest@dev</tspan><tspan fill="#475569">:~$ </tspan><tspan fill="#94A3B8">ls specialties/</tspan></text>
-  <text x="80" y="290" font-size="14.5" font-family="Consolas, 'SF Mono', Menlo, monospace" fill="#5EEAD4">python-dev/  llm-workflows/  etl-pipelines/  web-scraping/</text>
+  <text x="80" y="264" font-size="15" font-family="Consolas, 'SF Mono', Menlo, monospace"><tspan fill="#F0883E">guest@dev</tspan><tspan fill="#8B949E">:~$ </tspan><tspan fill="#C9D1D9">ls specialties/</tspan></text>
+  <text x="80" y="290" font-size="14.5" font-family="Consolas, 'SF Mono', Menlo, monospace" fill="#FFA657">python-dev/  llm-workflows/  etl-pipelines/  web-scraping/</text>
 
-  <text x="80" y="324" font-size="15" font-family="Consolas, 'SF Mono', Menlo, monospace"><tspan fill="#2DD4BF">guest@dev</tspan><tspan fill="#475569">:~$ </tspan><tspan fill="#94A3B8">status --check</tspan></text>
-  <text x="80" y="350" font-size="14" font-family="Consolas, 'SF Mono', Menlo, monospace"><tspan fill="#34D399" font-weight="700">[OK]</tspan><tspan fill="#94A3B8"> remote · europe &#160;|&#160; 5+ yrs experience &#160;|&#160; 12+ projects shipped</tspan></text>
+  <text x="80" y="324" font-size="15" font-family="Consolas, 'SF Mono', Menlo, monospace"><tspan fill="#F0883E">guest@dev</tspan><tspan fill="#8B949E">:~$ </tspan><tspan fill="#C9D1D9">status --check</tspan></text>
+  <text x="80" y="350" font-size="14" font-family="Consolas, 'SF Mono', Menlo, monospace"><tspan fill="#3FB950" font-weight="700">[OK]</tspan><tspan fill="#8B949E"> remote · europe &#160;|&#160; 5+ yrs experience &#160;|&#160; 12+ projects shipped</tspan></text>
 
   <!-- pill buttons -->
-  <rect x="80" y="362" width="176" height="30" rx="15" fill="url(#teal)"/>
-  <text x="168" y="382" text-anchor="middle" font-size="13" font-family="Consolas, 'SF Mono', Menlo, monospace" fill="#04140F" font-weight="700" letter-spacing="0.5">OPEN TO WORK</text>
+  <rect x="80" y="362" width="176" height="30" rx="15" fill="url(#orange)"/>
+  <text x="168" y="382" text-anchor="middle" font-size="13" font-family="Consolas, 'SF Mono', Menlo, monospace" fill="#0D1117" font-weight="700" letter-spacing="0.5">OPEN TO WORK</text>
 
-  <rect x="270" y="362" width="120" height="30" rx="15" fill="transparent" stroke="#334155" stroke-width="1.3"/>
-  <text x="330" y="382" text-anchor="middle" font-size="13" font-family="Consolas, 'SF Mono', Menlo, monospace" fill="#CBD5E1" font-weight="600">CONTACT →</text>
+  <rect x="270" y="362" width="120" height="30" rx="15" fill="transparent" stroke="#30363D" stroke-width="1.3"/>
+  <text x="330" y="382" text-anchor="middle" font-size="13" font-family="Consolas, 'SF Mono', Menlo, monospace" fill="#C9D1D9" font-weight="600">CONTACT →</text>
 
   <!-- ============ RIGHT: PIPELINE PANEL ============ -->
   <g filter="url(#panelShadow)">
-    <rect x="960" y="48" width="592" height="340" rx="10" fill="#0B111C" stroke="#1C2433" stroke-width="1.5"/>
+    <rect x="960" y="48" width="592" height="340" rx="10" fill="#0D1117" stroke="#30363D" stroke-width="1.5"/>
   </g>
 
-  <text x="992" y="90" font-size="12" font-family="Consolas, 'SF Mono', Menlo, monospace" fill="#5EEAD4" font-weight="700" letter-spacing="2">// WORKFLOW PIPELINE</text>
-  <rect x="960" y="106" width="592" height="1" fill="#1C2433"/>
+  <text x="992" y="90" font-size="12" font-family="Consolas, 'SF Mono', Menlo, monospace" fill="#FFA657" font-weight="700" letter-spacing="2">// WORKFLOW PIPELINE</text>
+  <rect x="960" y="106" width="592" height="1" fill="#30363D"/>
 
   <!-- connecting line -->
   <line x1="1012" y1="150" x2="1012" y2="352" stroke="url(#pipeline)" stroke-width="3" stroke-dasharray="2 8" stroke-linecap="round">
@@ -94,29 +93,29 @@
   </line>
 
   <!-- node 1 -->
-  <circle cx="1012" cy="150" r="20" fill="#0B111C" stroke="#2DD4BF" stroke-width="2"/>
-  <text x="1012" y="155" text-anchor="middle" font-size="12" font-family="Consolas, 'SF Mono', Menlo, monospace" fill="#2DD4BF" font-weight="700">01</text>
-  <text x="1050" y="146" font-size="17" font-family="Consolas, 'SF Mono', Menlo, monospace" fill="#F1F5F9" font-weight="700">SCRAPE</text>
-  <text x="1050" y="166" font-size="12.5" font-family="Segoe UI, Arial, sans-serif" fill="#64748B">Collect thousands of records from the web</text>
+  <circle cx="1012" cy="150" r="20" fill="#0D1117" stroke="#F0883E" stroke-width="2"/>
+  <text x="1012" y="155" text-anchor="middle" font-size="12" font-family="Consolas, 'SF Mono', Menlo, monospace" fill="#F0883E" font-weight="700">01</text>
+  <text x="1050" y="146" font-size="17" font-family="Consolas, 'SF Mono', Menlo, monospace" fill="#E6EDF3" font-weight="700">SCRAPE</text>
+  <text x="1050" y="166" font-size="12.5" font-family="Segoe UI, Arial, sans-serif" fill="#8B949E">Collect thousands of records from the web</text>
 
   <!-- node 2 -->
-  <circle cx="1012" cy="216" r="20" fill="#0B111C" stroke="#2DD4BF" stroke-width="2"/>
-  <text x="1012" y="221" text-anchor="middle" font-size="12" font-family="Consolas, 'SF Mono', Menlo, monospace" fill="#2DD4BF" font-weight="700">02</text>
-  <text x="1050" y="212" font-size="17" font-family="Consolas, 'SF Mono', Menlo, monospace" fill="#F1F5F9" font-weight="700">SCORE</text>
-  <text x="1050" y="232" font-size="12.5" font-family="Segoe UI, Arial, sans-serif" fill="#64748B">Rank &amp; qualify with LLMs — Claude, Groq</text>
+  <circle cx="1012" cy="216" r="20" fill="#0D1117" stroke="#F0883E" stroke-width="2"/>
+  <text x="1012" y="221" text-anchor="middle" font-size="12" font-family="Consolas, 'SF Mono', Menlo, monospace" fill="#F0883E" font-weight="700">02</text>
+  <text x="1050" y="212" font-size="17" font-family="Consolas, 'SF Mono', Menlo, monospace" fill="#E6EDF3" font-weight="700">SCORE</text>
+  <text x="1050" y="232" font-size="12.5" font-family="Segoe UI, Arial, sans-serif" fill="#8B949E">Rank &amp; qualify with LLMs — Claude, Groq</text>
 
   <!-- node 3 -->
-  <circle cx="1012" cy="282" r="20" fill="#0B111C" stroke="#2DD4BF" stroke-width="2"/>
-  <text x="1012" y="287" text-anchor="middle" font-size="12" font-family="Consolas, 'SF Mono', Menlo, monospace" fill="#2DD4BF" font-weight="700">03</text>
-  <text x="1050" y="278" font-size="17" font-family="Consolas, 'SF Mono', Menlo, monospace" fill="#F1F5F9" font-weight="700">LOAD</text>
-  <text x="1050" y="298" font-size="12.5" font-family="Segoe UI, Arial, sans-serif" fill="#64748B">Clean storage — PostgreSQL / Supabase</text>
+  <circle cx="1012" cy="282" r="20" fill="#0D1117" stroke="#F0883E" stroke-width="2"/>
+  <text x="1012" y="287" text-anchor="middle" font-size="12" font-family="Consolas, 'SF Mono', Menlo, monospace" fill="#F0883E" font-weight="700">03</text>
+  <text x="1050" y="278" font-size="17" font-family="Consolas, 'SF Mono', Menlo, monospace" fill="#E6EDF3" font-weight="700">LOAD</text>
+  <text x="1050" y="298" font-size="12.5" font-family="Segoe UI, Arial, sans-serif" fill="#8B949E">Clean storage — PostgreSQL / Supabase</text>
 
   <!-- node 4 -->
-  <circle cx="1012" cy="348" r="20" fill="#0B111C" stroke="#F59E0B" stroke-width="2.4"/>
-  <text x="1012" y="353" text-anchor="middle" font-size="12" font-family="Consolas, 'SF Mono', Menlo, monospace" fill="#FBBF24" font-weight="700">04</text>
-  <text x="1050" y="344" font-size="17" font-family="Consolas, 'SF Mono', Menlo, monospace" fill="#FBBF24" font-weight="700">DELIVER</text>
-  <text x="1050" y="364" font-size="12.5" font-family="Segoe UI, Arial, sans-serif" fill="#64748B">Telegram · Email · Live Dashboard</text>
+  <circle cx="1012" cy="348" r="20" fill="#0D1117" stroke="#FFA657" stroke-width="2.4"/>
+  <text x="1012" y="353" text-anchor="middle" font-size="12" font-family="Consolas, 'SF Mono', Menlo, monospace" fill="#FFA657" font-weight="700">04</text>
+  <text x="1050" y="344" font-size="17" font-family="Consolas, 'SF Mono', Menlo, monospace" fill="#FFA657" font-weight="700">DELIVER</text>
+  <text x="1050" y="364" font-size="12.5" font-family="Segoe UI, Arial, sans-serif" fill="#8B949E">Telegram · Email · Live Dashboard</text>
 
   <!-- footer -->
-  <text x="800" y="409" text-anchor="middle" font-size="12.5" font-family="Segoe UI, Arial, sans-serif" fill="#475569" letter-spacing="0.3">5+ years experience &#160;·&#160; 12+ projects delivered &#160;·&#160; 4.9 / 5.0 client satisfaction</text>
+  <text x="800" y="409" text-anchor="middle" font-size="12.5" font-family="Segoe UI, Arial, sans-serif" fill="#6E7681" letter-spacing="0.3">5+ years experience &#160;·&#160; 12+ projects delivered &#160;·&#160; 4.9 / 5.0 client satisfaction</text>
 </svg>
