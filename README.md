@@ -1,4 +1,4 @@
-```markdown
+
 <div align="center">
   <img src="./assets/banner.svg" alt="Jhonson Ayalew, AI Automation Engineer and Python Developer" width="100%" />
 
@@ -44,4 +44,4 @@ Ambo University &nbsp;·&nbsp; 2021 – 2024
   <br/>
   <sub>Interested in AI automation, Python development, ETL, and backend engineering.</sub>
 </div>
-```
+
